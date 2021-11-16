@@ -174,7 +174,7 @@ function eventListeners(){
     document.getElementById("addComment").addEventListener("click", addNewNote); 
 
     noteListDiv.addEventListener("click", deleteNote);
-    document.getElementById("delete-all-btn").addEventListener("click", deleteAllNotes);
+    // document.getElementById("delete-all-btn").addEventListener("click", deleteAllNotes);
    
   }
 
