@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imkon.uz</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="../image/logo/">
+    <link rel="apple-touch-icon" sizes="60x60" href="../image/logo/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../image/logo/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../image/logo/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../image/logo/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../image/logo/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../image/logo/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../image/logo/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../image/logo/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../image/logo/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../image/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../image/logo/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../image/logo/favicon-16x16.png">
+    <link rel="manifest" href="../image/logo/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../image/logo/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="../homepage/index.html" class="logo__link"><img src="../image/Logo login.svg" alt="" class="logo"></a>
+                <div class="line"></div>
+                <div class="weather-container">
+                    <div class="weather-icon">
+                        <img src="icons/unknown.png" alt="">
+                    </div>
+                    <div class="temperature-value">
+                        <p>- °<span>C</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="featured">
+        <div class="register-box">
+            <h1 class="register__title">Ro'yxatdan o'tish</h1>
+
+            <form >
+                <div class="namebox">
+                    <div class="name-box">
+                        <h3 class="name__title">Ism</h3>
+                        <input type="text" class="name__input" id="name" placeholder="Ismingiz"required>
+                    </div>
+                    <div class="name-box">
+                        <h3 class="name__title">Familiya</h3>
+                        <input type="text" class="name__input" id="Sname" placeholder="Familyangiz"required>
+                    </div>
+                </div>
+
+                <h1 class="name__title">Elektron pochtangiz</h1>
+                <input type="email" name="" id="email" class="email__input" placeholder="info@imkon.uz"required>
+
+                <h1 class="name__title">Parol</h1>
+                <input type="password" name="" id="password" class="email__input" placeholder="Parolingiz"required>
+
+<!-- 
+                <h1 class="name__title">Tug'ilgan kuningiz</h1>
+                <div class="select-box">
+                    <select name="" id="" class="select__date-birth">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="">18</option>
+                        <option value="">19</option>
+                        <option value="">20</option>
+                        <option value="">21</option>
+                        <option value="">22</option>
+                        <option value="">23</option>
+                        <option value="">24</option>
+                        <option value="">25</option>
+                        <option value="">26</option>
+                        <option value="">27</option>
+                        <option value="">28</option>
+                        <option value="">29</option>
+                        <option value="">30</option>
+                        <option value="">31</option>
+                    </select>
+
+                    <select name="" id="" class="select__date-birth">
+                        <option value="">Yanvar</option>
+                        <option value="">Fevral</option>
+                        <option value="">Mart</option>
+                        <option value="">Aprel</option>
+                        <option value="">May</option>
+                        <option value="">Iyun</option>
+                        <option value="">Iyul</option>
+                        <option value="">Avgust</option>
+                        <option value="">Sentyabr</option>
+                        <option value="">Oktyabr</option>
+                        <option value="">Noyabr</option>
+                        <option value="">Dekabr</option>
+                    </select>
+
+                    <select name="" id="" class="select__date-birth">
+                        <option value="">2010</option>
+                        <option value="">2009</option>
+                        <option value="">2008</option>
+                        <option value="">2007</option>
+                        <option value="">2006</option>
+                        <option value="">2005</option>
+                        <option value="">2004</option>
+                        <option value="">2003</option>
+                        <option value="">2002</option>
+                        <option value="">2001</option>
+                        <option value="">2000</option>
+                        <option value="">1999</option>
+                        <option value="">1998</option>
+                        <option value="">1997</option>
+                        <option value="">1996</option>
+                        <option value="">1995</option>
+                        <option value="">1994</option>
+                        <option value="">1993</option>
+                        <option value="">1992</option>
+                        <option value="">1991</option>
+                        <option value="">1990</option>
+                        <option value="">1989</option>
+                        <option value="">1988</option>
+                        <option value="">1987</option>
+                        <option value="">1986</option>
+                        <option value="">1985</option>
+                        <option value="">1984</option>
+                        <option value="">1983</option>
+                        <option value="">1982</option>
+                        <option value="">1981</option>
+                    </select>
+                </div>
+
+                <div class="ratio-box">
+                    <h1 class="name__title">Jinsingiz</h1>
+                    <div class="ratio-content">
+                        <div class="radio-box1">
+                            <input type="radio" name="filtre" id="Man">
+                            <span></span>
+                            <label for="Man" class="filter__text">Erkak</label>
+                        </div>
+                        <div class="radio-box1">
+                            <input type="radio" name="filtre" id="Woman">
+                            <span></span>
+                            <label for="Woman" class="filter__text">Ayol</label>
+                        </div>
+                    </div>
+                </div> -->
+
+                <button class="next__btn" onclick="register()">Ro'yxatdan o'tish</button>
+            </form>
+
+            <p class="featured__p">Ro'yxatdan o'tish bilan siz <a href="#">Foydalanish qoidalari</a> va <a href="#">Maxfiylik siyosatiga</a> roziligingizni bildirasiz</p>
+        </div>
+
+        <div class="login-box">
+            <h1 class="login__title">Akkauntingiz bormi?</h1>
+            <a href="../Login/index.html" class="login__link"><button class="enter">Kirish</button></a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="footer-link">Biz haqimizda</a>
+                <a href="#" class="footer-link">Xizmat ko'rsatish shartlari</a>
+                <a href="#" class="footer-link">Maxfiylik siyosati</a>
+                <a href="#" class="footer-link">Cookie fayllari siyosati</a>
+                <a href="#" class="footer-link">Reklama haqida ma'lumot</a> <br>
+                
+            </div>
+            <div class="footer-then">
+                <div class="language-box">
+                    <div class="languages">
+                        <div class="language-item">
+                            <img src="../image/uzbekistan.png" alt="">
+                            <span class="language__title">O'zbek</span>
+                            
+                        </div>
+
+                        <div class="language-item">
+                            <img src="../image/united-states.png" alt="">
+                            <span class="language__title">English</span>
+                            
+                        </div>
+
+                        <div class="language-item">
+                            <img src="../image/russia.png" alt="">
+                            <span class="language__title">Русский</span>
+                            
+                        </div>
+                    </div>
+                    <div class="language-item active" onclick="click()">
+                        <img src="../image/uzbekistan.png" alt="">
+                        <span class="language__title">O'zbek</span>
+                        <i class="arrow-top">
+                            <svg width="11" height="6" viewBox="0 0 11 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.980983 0.0457039C1.17229 0.0457039 1.3462 0.115269 1.48533 0.2544L5.32881 4.2544L9.17229 0.2544C9.43316 -0.0238614 9.88533 -0.0238619 10.1636 0.237008C10.4419 0.497878 10.4419 0.950052 10.181 1.22831L5.83316 5.75005C5.69403 5.88918 5.52011 5.95875 5.32881 5.95875C5.1375 5.95875 4.96359 5.88918 4.82446 5.75005L0.476635 1.22831C0.215766 0.950052 0.215765 0.515269 0.494026 0.237008C0.633157 0.115269 0.80707 0.0457039 0.980983 0.0457039Z"
+                                    fill="#8d949c"></path>
+                            </svg>
+                        </i>
+                    </div>
+                </div>
+                <a href="#" class="footer-link">Brend resurslari</a>
+                <h1 href="#" class="footer-link">Imkon © 2021</h1>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+<script src="../firebase.js"></script>
+<script src="app.js"></script>
+</html>

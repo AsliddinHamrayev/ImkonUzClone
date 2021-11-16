@@ -1,0 +1,386 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #182836;
+    font-family: "Fira Sans",Arial,Tahoma,sans-serif;
+    color: #fff;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #a9a9a9;
+}
+input {
+    color: #fff;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.weather-C {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.weather-C__img {
+    width: 20px;
+}
+
+.weather-C__title {
+    font-weight: normal;
+    font-size: 26px;
+}
+
+header {
+    background-color: #1b252d;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 6%), 0 4px 20px rgb(0 0 0 / 10%);
+}
+
+.header-content {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    
+}
+
+.logo {
+    max-width:100px;
+    width: 100%;
+}
+
+.line {
+    width: 1px;
+    height: 35px;
+    background-color: #fff;
+}
+
+/*Featured*/
+
+.register__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 32px;
+}
+
+.featured {
+    margin-top: 35px;
+}
+
+.register-box, .login-box {
+    background-color: #40474d;
+    padding: 32px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.namebox {
+    display: flex;
+    gap: 20px;
+}
+
+.name__input {
+    padding: 0 15px;
+    width: 255px;
+    height: 40px;
+    border-radius: 5px !important;
+    border: 3px solid transparent;
+    background-color: #2b3641;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+.name__title {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+.email__input {
+    height: 40px;
+    width: 100%;
+    padding: 0 15px;
+    border-radius: 5px !important;
+    border: 3px solid transparent;
+    background-color: #2b3641;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+.name__input:focus, .email__input:focus   {
+    border-color: #1385fa;
+    color: white;
+}
+
+
+.select-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.select__date-birth {
+    width: 155px;
+    height: 35px;
+    background-color: #2b3641;
+    margin-bottom: 30px;
+    outline: none;
+    color: #fff;
+}
+
+.select__date-birth:focus {
+    background-color: #212931;
+}
+
+
+/*Ratio*/
+.radio-box1 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.ratio-content {
+    display: flex;
+    gap: 35px;
+}
+.filter__text {
+    font-weight: normal;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.radio-box1 span {
+    height: 15px;
+    width: 15px;
+    border: 1px solid rgb(224, 224, 224);
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+} 
+
+.radio-box1 span:after {
+    content: "";
+    height: 8px;
+    width: 8px;
+    border: 5px solid #1385fa;
+    background-color: #fff;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 300ms ease-in-out 0s;
+}
+
+input[type="radio"]:checked ~ span:after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.check-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+label {
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+
+.next__btn {
+    width: 100%;
+    padding: 8px;
+    background-color: #1385fa;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.featured__p {
+    color: #a9a9a9;
+    font-size: 14px;
+    max-width: 535px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+a {
+    color: #f2f2f2;
+}
+
+.login-box {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login__title {
+    font-size: 12px;
+    color: #a9a9a9;
+}
+
+.enter {
+    padding: 10px 30px;
+    background-color: #00000026;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*Footer*/
+
+.footer-link, .language__title {
+    color: #8e9ba8;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+footer {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 32px;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/*Language*/
+
+.language-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: 10px 25px 10px 10px;
+}
+.active {
+    padding: 10px;
+}
+
+
+.languages {
+    background: #2e373f;
+    position: absolute;
+    transform: translate(10px, -110px);
+    display: none;
+}
+
+.footer-then {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 520px;
+    margin: 0 auto;
+}
+
+.logo-login {
+    display: none;
+}
+
+.border {
+    border: 3px solid red;
+}
+
+
+@media screen and (max-width: 1170px) {
+    .container {
+        max-width: 1060px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        display: none;
+    }
+
+    .namebox {
+        display: block;
+    }
+
+    .name__input {
+        width: 100%;
+    }
+
+    .select__date-birth {
+        width: 120px;
+    }
+    .register-box, .login-box {
+        width: 90%;
+    }
+
+    .footer-content {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .footer-then {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .select__date-birth {
+        width: 80px;
+    }
+}
+
+/* Weather */
+
+
+.weather-icon img {
+    width: 70px;
+}
+
+.weather-container {
+    display: flex;
+    align-items: center;
+}
+
+.temperature-value p {
+    font-size: 28px;
+    font-weight: 600;
+}
