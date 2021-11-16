@@ -322,6 +322,6 @@ logout.addEventListener('click', (e) => {
     console.log(e);
     auth.signOut().then(() => {
         console.log('user signed out');
-        window.location.href = "../Login/index.html"
+        window.location.href = "../index.html"
     })
 })
