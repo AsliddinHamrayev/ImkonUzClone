@@ -113,15 +113,6 @@ function register() {
     sname = document.getElementById('Sname').value
 
     // // Validate input fields
-    // if (validate_email(email) == false || validate_password(password) == false) {
-    //     alert('Email or Password is Outta Line!!')
-    //     return
-    //     // Don't continue running the code
-    // }
-    // if (validate_field(fname) == false || validate_field(sname) == false) {
-    //     alert('One or More Extra Fields is Outta Line!!')
-    //     return
-    // }
 
     // Move on with Auth
     auth.createUserWithEmailAndPassword(email, password)
